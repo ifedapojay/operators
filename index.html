@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OPERATORS</title>
+</head>
+
+<body style="background-color:dodgerblue; text-align:center;color: white; margin: 10px;">
+    <div id="sum">The sum of 2 operands :</div> <br>
+    <div id="subtract"> The subtraction of 2 operands</div> <br>
+    <div id="times">The Multiplication of 2 operands :</div> <br>
+    <div id="divide"> The division of 2 operands :</div> <br>
+    <div id="modul">The modulus of 2 operands :</div> <br>
+    <div id="expo"> The exponential of 2 operands :</div> <br>
+
+    <!-- <p>The sum of two operands is: <span id="sum"></span></p> -->
+    <button onclick="plus(2,2,2)">Addequal</button> <br>
+    
+    <button onclick="minus(2,2,2)">Subtractequal</button> <br>
+    
+    <button onclick="multi(2,2,2)">Multiplyequal</button> <br>
+    
+    <button onclick="division(2,2,2)">Divisionequal</button> <br>
+
+    <button onclick="modul(2,2)">modulequal</button> <br>
+
+    <span><button onclick="exponential(2,2)"> expoequal</button> <br> </span> 
+
+    <!-- //<button onclick="division(2,2,2)">Divisionequal</button> <br> -->
+    
+    <script>
+        function plus(a =0,b =0,c =0,d =0,e =0){
+            document.getElementById ('sum').innerHTML= (a+b)+c
+        }
+        function minus(a =0, b =0,c =0,d =0){
+            document.getElementById('subtract').innerHTML = a-b-c  
+            //console.log(4-2-8)
+        }
+        function multi(a =0,b =0,c =0,d =0,e =0){
+            document.getElementById('times').innerHTML = a*b*c
+        }
+
+        function division(a =0,b =0,c =0,d =0,e =0){
+            document.getElementById ('divide').innerHTML= (a/b)/c
+        }
+        function modul(a =0,b =0,c =0,d =0,e =0){
+            document.getElementById ('modul').innerHTML=(a % b)
+        }
+        function exponential(a =0,b =0,c =0,d =0,e =0){
+            document.getElementById ('expo').innerHTML=(a**b)
+        }
+
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
